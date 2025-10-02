@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASCII Webcam Test</title>
+  <style>
+    body {
+      background: black;
+      color: limegreen;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    pre {
+      font-size: 9px;
+      line-height: 6px;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" autoplay playsinline style="display:none"></video>
+  <pre id="ascii"></pre>
+
+  <script>
+    const video = document.getElementById("video");
+    const ascii = document.getElementById("ascii");
+    const chars = "@%#*+=-:. "; // darkest → lightest
+
+    // Request webcam access
+    navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
+      video.srcObject = stream;
+
+      const canvas = document.createElement("canvas");
+      const ctx = canvas.getContext("2d");
+
+      function renderFrame() {
+        const width = 320;  // ASCII width
+        const height = 180; // ASCII height
+        canvas.width = width;
+        canvas.height = height;
+
+        ctx.drawImage(video, 0, 0, width, height);
+        const pixels = ctx.getImageData(0, 0, width, height).data;
+
+        let asciiFrame = "";
+        for (let y = 0; y < height; y++) {
+          for (let x = 0; x < width; x++) {
+            const offset = (y * width + x) * 4;
+            const r = pixels[offset];
+            const g = pixels[offset + 1];
+            const b = pixels[offset + 2];
+            const brightness = (r + g + b) / 3;
+            const charIndex = Math.floor((brightness / 255) * (chars.length - 1));
+            asciiFrame += chars[charIndex];
+          }
+          asciiFrame += "\n";
+        }
+
+        ascii.textContent = asciiFrame;
+        requestAnimationFrame(renderFrame);
+      }
+      renderFrame();
+    });
+  </script>
+</body>
+</html>
