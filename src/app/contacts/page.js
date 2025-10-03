@@ -41,16 +41,16 @@ export default function ContactPage() {
       </p>
 
      
-    <div className='bg-gradient-to-tr from-purple-600 to-blue-900 px-10 py-20 mt-16 rounded-xl'>
-         <p className="text-white bg-purple-400 py-2 px-1 text-center rounded-xl">
+    <div>
+         <p className="text-white  text-center">
     Much Love
     </p>
-    <Image
-        src="/gurbiee.gif"
+    <Image 
+        src="/heart.gif"
         alt="Fun GIF"
-        width={300}
-        height={300}
-        className="rounded"
+        width={500}
+        height={500}
+        className="rounded cursor-target"
     />
     </div>
 </main>
