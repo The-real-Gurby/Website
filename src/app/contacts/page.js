@@ -1,7 +1,7 @@
 import TargetCursor from '@/components/TargetCursor';
 import Projectiles from '@/components/Projectiles';
 import ShinyText from '@/components/ShinyText';
-
+import Image from "next/image";
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-black flex flex-col items-center py-20">
@@ -13,7 +13,7 @@ export default function ContactPage() {
       <TargetCursor targetSelector=".cursor-target" spinDuration={2} hideDefaultCursor={true} />
 
       {/* Page Title */}
-      <h1 className="text-5xl sm:text-6xl text-white font-bold mb-16 cursor-target drop-shadow-lg">
+      <h1 className="text-5xl sm:text-6xl text-white font-bold mb-16 drop-shadow-lg">
         Contact Me
       </h1>
 
@@ -28,11 +28,31 @@ export default function ContactPage() {
         <a href="https://www.instagram.com/gurbies.art/" target="_blank" rel="noopener noreferrer" className="cursor-target px-8 py-4 bg-pink-500 text-white rounded-full font-semibold hover:bg-pink-600 transition drop-shadow-lg">
           <ShinyText text="Instagram" speed={3} />
         </a>
+        <a href="https://www.youtube.com/@Gurbzy" target="_blank" rel="noopener noreferrer" className="cursor-target px-8 py-4 bg-red-500 rounded-full font-semibold hover:bg-red-700 transition drop-shadow-lg">
+          <ShinyText text="Youtube" speed={3} />
+        </a>
       </div>
 
-      <p className="text-gray-400 mt-16 cursor-target text-center max-w-md">
+      <p className="text-gray-400 mt-16  text-center max-w-md">
         Follow me for updates & art!
       </p>
-    </main>
+      <p className="text-gray-400 mt-16  text-center max-w-md">
+        I don&apos;t post much on my Youtube, but you can see some of my old speedruns and some gaming I did back in my day
+      </p>
+
+     
+    <div className='bg-gradient-to-tr from-purple-600 to-blue-900 px-10 py-20 mt-16 rounded-xl'>
+         <p className="text-white bg-purple-400 py-2 px-1 text-center rounded-xl">
+    Much Love
+    </p>
+    <Image
+        src="/gurbiee.gif"
+        alt="Fun GIF"
+        width={300}
+        height={300}
+        className="rounded"
+    />
+    </div>
+</main>
   );
 }

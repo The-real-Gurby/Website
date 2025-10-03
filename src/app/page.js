@@ -22,7 +22,7 @@ export default function Page() {
           transparent={false}
         />
 
-        <div className="relative z-10 text-center px-4">
+        <div className="relative z-10 text-center px-6 py-10 rounded-xl bg-purple-400">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white drop-shadow-lg">
             Hi, I&apos;m Gurby
           </h1>
@@ -128,6 +128,12 @@ export default function Page() {
           </a>
         </div>
       </section>
+<section className="bg-black py-20 w-full flex flex-col items-center">
+
+
+
+</section>
+
     </main>
   );
 }
