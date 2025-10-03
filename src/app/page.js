@@ -66,8 +66,8 @@ export default function Page() {
 
           {/* Image / GIFs on the right */}
           <div className="md:w-1/2 flex justify-center bg-black relative z-10 space-y-4">
-            <Image src="/Trans.gif" alt="Cool animated GIF" width={500} height={500} />
-            <Image src="/gurbiee.gif" alt="Another GIF" width={500} height={500} />
+            <Image src="/Trans.gif" alt="Cool animated GIF" width={200} height={200} />
+            <Image src="/gurbiee.gif" alt="Another GIF" width={355} height={261} />
           </div>
         </div>
       </section>
