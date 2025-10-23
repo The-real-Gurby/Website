@@ -1,0 +1,49 @@
+
+[21:22:10.313] ------------------------------
+[21:22:10.339] MelonLoader v0.7.1 Open-Beta
+[21:22:10.341] OS: Windows 11
+[21:22:10.342] Hash Code: 92E7D4D50B8F627A23C38EDB9DA9426B6DF6561D86F10DE03DC5831D8AC76AF0
+[21:22:10.342] ------------------------------
+[21:22:10.386] Game Type: MonoBleedingEdge
+[21:22:10.386] Game Arch: x64
+[21:22:10.387] ------------------------------
+[21:22:10.387] Command-Line: 
+[21:22:10.387] ------------------------------
+[21:22:10.387] Core::BasePath = D:\SteamLibrary\steamapps\common\CloverPit
+[21:22:10.387] Game::BasePath = D:\SteamLibrary\steamapps\common\CloverPit
+[21:22:10.387] Game::DataPath = D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data
+[21:22:10.388] Game::ApplicationPath = D:\SteamLibrary\steamapps\common\CloverPit\CloverPit.exe
+[21:22:10.388] Runtime Type: net35
+[21:22:10.462] ------------------------------
+[21:22:10.463] Game Name: CloverPit
+[21:22:10.463] Game Developer: Panik Arcade
+[21:22:10.464] Unity Version: 6000.0.37f1
+[21:22:10.464] Game Version: 1.1
+[21:22:10.464] ------------------------------
+
+[21:22:10.632] Preferences Loaded!
+
+[21:22:10.659] Loading UserLibs...
+[21:22:10.663] 0 UserLibs loaded.
+
+[21:22:10.663] Loading Plugins...
+[21:22:10.681] ------------------------------
+[21:22:10.685] Melon Assembly loaded: '.\Plugins\OrderCharmMod.dll'
+[21:22:10.685] SHA256 Hash: '689F540CE36487D458404E79EE6C0DB6BB8C7E8AC2D26E81CACAB700A2BD8327'
+
+[21:22:10.710] ------------------------------
+[21:22:10.710] OrderCharmMod v1.0.0
+[21:22:10.711] by zix
+[21:22:10.711] Assembly: OrderCharmMod.dll
+[21:22:10.711] ------------------------------
+[21:22:10.711] ------------------------------
+[21:22:10.711] 1 Plugin loaded.
+
+[21:22:11.025] Hooked into static void UnityEngine.SceneManagement.SceneManager::Internal_ActiveSceneChanged(UnityEngine.SceneManagement.Scene previousActiveScene, UnityEngine.SceneManagement.Scene newActiveScene)
+
+[21:22:11.303] Loading Mods...
+[21:22:11.305] 0 Mods loaded.
+
+[21:22:11.312] Support Module Loaded: D:\SteamLibrary\steamapps\common\CloverPit\MelonLoader\Dependencies\SupportModules\Mono.dll
+[21:22:11.314] [OrderCharmMod] Order-A-Charm Mod has been loaded!
+[21:25:25.014] Preferences Saved!
