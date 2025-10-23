@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Nothing yet",
-      description: ".",
+      title: "Cube Using Orthographic Projection",
+      description: "I origionally coded this in Python but tranlating it over was difficult",
       image: "",
-      link: "#",
+      link: "/cube",
     },
     {
       title: "Been real lazy lately",
