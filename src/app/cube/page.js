@@ -106,7 +106,7 @@ export default function ProjectsPage() {
       {/* Interactive 3D Cube Canvas */}
       <InteractiveCube />
       <div className="bg-gray-900 rounded-lg p-6 max-w-4xl mx-auto overflow-x-auto mb-16">
-        <h3 className="text-2xl font-bold mb-4 text-white">Java ube Code</h3>
+        <h3 className="text-2xl font-bold mb-4 text-white">Java Cube Code</h3>
         <pre className="text-sm font-mono whitespace-pre-wrap text-white">
 {`function InteractiveCube() {
   const canvasRef = useRef(null);
@@ -217,6 +217,8 @@ export default function ProjectsPage() {
           {`Overall this was a real fun project that with some of the other things I added after the cube took me about 18hrs to complete`}
         </pre>
         </div>
+    <h3 className="text-2xl font-bold mb-4 text-white ">Please credit me if you use this for whatever reason!</h3>
+
     </main>
   );
 }
